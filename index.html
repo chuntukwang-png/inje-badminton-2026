@@ -72,7 +72,7 @@ footer{margin-top:30px;font-size:12px;color:var(--mute)}
 <header>
  <div class="org">인제교육지원청 · 참가자 확인용</div>
  <h1>2026 인제 사제동행 배드민턴대회</h1>
- <div class="meta">참가자 명단 · 총 <span id="total"></span>팀 (복식) · 학교 · 종목 · 그룹 · 구분(학생/학부모/교사)별 확인</div>
+ <div class="meta">참가자 명단 · 총 <span id="total"></span>팀 (복식) · 학교 · 종목 · 그룹 · 참가자 구분별 확인</div>
 </header>
 <div class="stats" id="stats"></div>
 
@@ -94,7 +94,7 @@ footer{margin-top:30px;font-size:12px;color:var(--mute)}
  <button role="tab" aria-selected="false" data-v="num">번호순</button>
 </div>
 <div class="legend">구분 표시:
- <span class="role r-stu">학생</span><span class="role r-par">학부모</span><span class="role r-tea">교사·교직원</span><span class="role r-adm">교장·교감</span><span class="role r-off">교육지원청</span>
+ <span class="role r-stu">학생</span><span class="role r-par">학부모</span><span class="role r-tea">교사</span><span class="role r-tea">교직원</span><span class="role r-adm">교장</span><span class="role r-adm">교감</span><span class="role r-off">교육지원청</span>
  <span>· 노란 배경 = 검색한 사람</span>
 </div>
 <div class="count" id="count"></div>
@@ -106,8 +106,7 @@ const TEAMS=[{"n":1,"e":"F","l":"초등","g":1,"p":[{"s":"인제남초등학교"
 const EN={M:'남복',F:'여복',X:'혼복'}, EF={M:'남자복식',F:'여자복식',X:'혼합복식'};
 const LVS=['초등','중등','고등'];
 const roleCls=r=>r==='학생'?'stu':r==='학부모'||r==='부'?'par':r==='교육지원청'?'off':(r==='교장'||r==='교감')?'adm':'tea';
-const roleTxt=r=>r==='부'?'학부모':r;
-const roleKey=r=>({stu:'학생',par:'학부모',tea:'교사·교직원',adm:'교장·교감',off:'교육지원청'})[roleCls(r)];
+const roleKey=r=>r==='부'?'학부모':['교무행정사','전문상담사','스포츠강사'].includes(r)?'교직원':r;
 const state={q:'',school:'',lv:'',e:'',g:'',role:'',view:'school'};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -117,7 +116,7 @@ const schools=[...new Set(TEAMS.flatMap(t=>t.p.map(x=>x.s)))].sort((a,b)=>{
 // team's home school = school of the student
 TEAMS.forEach(t=>{const st=t.p.find(x=>x.r==='학생'||x.r==='학부모'&&false)||t.p[1];t.home=st.s;t.sch=[...new Set(t.p.map(x=>x.s))]});
 function segs(){
- const defs={lv:['초등','중등','고등'],e:['M','F','X'],g:[1,2,3,4,5,6],role:['학생','학부모','교사·교직원','교장·교감','교육지원청']};
+ const defs={lv:['초등','중등','고등'],e:['M','F','X'],g:[1,2,3,4,5,6],role:['학생','학부모','교사','교직원','교장','교감','교육지원청']};
  document.querySelectorAll('.seg').forEach(el=>{const k=el.dataset.k;
   const mk=(v,l)=>{const b=document.createElement('button');b.textContent=l;b.dataset.v=v;b.setAttribute('aria-pressed','false');b.onclick=()=>{state[k]=state[k]==v?'':v;render()};el.appendChild(b)};
   mk('','전체');defs[k].forEach(v=>mk(v,k==='e'?EF[v]:k==='g'?v+'그룹':v))});
@@ -137,7 +136,7 @@ function match(t){
 function card(t){
  const q=state.q.trim();
  return `<div class="team ${t.e}"><div class="th"><span class="no">No.${t.n}</span><span class="tag ${t.e}">${EF[t.e]}</span><span class="tag lv">${t.l} ${t.g}그룹</span></div>`+
- t.p.map(x=>`<div class="p ${q&&x.m.includes(q)?'hit':''}"><div><div class="nm">${esc(x.m)}</div><div class="sc">${esc(x.s)}</div></div><span class="role r-${roleCls(x.r)}">${esc(roleTxt(x.r))}</span></div>`).join('')+`</div>`;
+ t.p.map(x=>`<div class="p ${q&&x.m.includes(q)?'hit':''}"><div><div class="nm">${esc(x.m)}<span class="role r-${roleCls(x.r)}">(${esc(roleKey(x.r))})</span></div><div class="sc">${esc(x.s)}${roleKey(x.r)==='교직원' && x.r!=='교직원'?' · '+esc(x.r):''}</div></div></div>`).join('')+`</div>`;
 }
 const cmpT=(a,b)=>LVS.indexOf(a.l)-LVS.indexOf(b.l)||'MFX'.indexOf(a.e)-'MFX'.indexOf(b.e)||a.g-b.g||a.n-b.n;
 function render(){
