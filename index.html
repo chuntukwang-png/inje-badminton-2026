@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 인제 사제동행 배드민턴대회 | 참가자 확인</title>
+<meta name="description" content="2026 인제 사제동행 배드민턴대회 참가 명단 - 학교별 · 종목별 · 그룹별 확인">
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#17212b;--mute:#5d6b79;--line:#e1e6eb;--brand:#0b6b57;--brand2:#e8f4f0;
+--stu:#1d6fdc;--stubg:#e6f0fd;--par:#b45f06;--parbg:#fdf0dc;--tea:#1b7f4b;--teabg:#e2f5ea;--off:#7a3fb5;--offbg:#f0e8fa;--adm:#0e7c86;--admbg:#e0f4f6;
+--m:#1d6fdc;--f:#d6336c;--x:#7a3fb5;--hl:#fff3a8}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#10161c;--card:#19212a;--ink:#e8edf2;--mute:#9aa8b6;--line:#2a3541;--brand:#4fcfae;--brand2:#14312b;
+--stu:#7ab4ff;--stubg:#16294a;--par:#f3b062;--parbg:#3a2a12;--tea:#6fd69b;--teabg:#12301f;--off:#c39bf0;--offbg:#2c1f40;--adm:#62d3dd;--admbg:#10323a;--m:#7ab4ff;--f:#ff8fb7;--x:#c39bf0;--hl:#5a4d0a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",system-ui,sans-serif;line-height:1.45}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px 60px}
+header{padding:28px 0 14px}
+.org{font-size:13px;color:var(--brand);font-weight:700;letter-spacing:.02em}
+h1{margin:4px 0 6px;font-size:clamp(22px,5vw,32px);line-height:1.2}
+.meta{color:var(--mute);font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.stat b{display:block;font-size:22px}.stat span{font-size:12px;color:var(--mute)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;position:sticky;top:8px;z-index:5;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+input[type=search],select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:44px}
+input[type=search]{flex:1 1 220px}
+select{flex:1 1 140px}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;align-items:center}
+.seg small{color:var(--mute);width:56px;font-size:12px}
+.seg button{font:inherit;font-size:14px;cursor:pointer;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 14px;min-height:36px}
+.seg button[aria-pressed=true]{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:700}
+.tabs{display:flex;gap:4px;margin:18px 0 10px;border-bottom:2px solid var(--line)}
+.tabs button{font:inherit;font-weight:700;background:none;border:0;padding:10px 16px;cursor:pointer;color:var(--mute);border-bottom:3px solid transparent;margin-bottom:-2px}
+.tabs button[aria-selected=true]{color:var(--brand);border-color:var(--brand)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--mute);align-items:center;margin:6px 0 12px}
+.count{font-size:14px;color:var(--mute);margin:6px 2px}
+.grp{margin:20px 0 8px;font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.grp i{font-style:normal;font-size:12px;color:var(--mute);font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+.team{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;border-left:5px solid var(--c)}
+.team.M{--c:var(--m)}.team.F{--c:var(--f)}.team.X{--c:var(--x)}
+.th{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:8px;font-size:12px}
+.no{font-weight:800;color:var(--mute)}
+.tag{padding:2px 8px;border-radius:999px;font-weight:700;font-size:12px;white-space:nowrap}
+.tag.M{background:var(--stubg);color:var(--m)}.tag.F{background:#fde6ef;color:var(--f)}.tag.X{background:var(--offbg);color:var(--x)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .tag.F{background:#42202f}}
+.tag.lv{background:var(--brand2);color:var(--brand)}
+.p{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:10px}
+.p+.p{margin-top:4px}
+.p.hit{background:var(--hl)}
+.nm{font-weight:700;font-size:16px}
+.sc{font-size:12px;color:var(--mute)}
+.role{margin-left:auto;font-size:12px;font-weight:700;padding:3px 9px;border-radius:8px;white-space:nowrap}
+.r-stu{background:var(--stubg);color:var(--stu)}.r-par{background:var(--parbg);color:var(--par)}.r-tea{background:var(--teabg);color:var(--tea)}.r-off{background:var(--offbg);color:var(--off)}.r-adm{background:var(--admbg);color:var(--adm)}
+.vs{display:none}
+.school{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.school>summary{cursor:pointer;padding:14px;font-weight:800;list-style:none;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.school>summary::-webkit-details-marker{display:none}
+.school>summary:before{content:"▸";color:var(--mute)}
+.school[open]>summary:before{content:"▾"}
+.school .sub{font-weight:400;font-size:13px;color:var(--mute);margin-left:auto}
+.school .grid{padding:0 12px 12px}
+.empty{padding:40px;text-align:center;color:var(--mute)}
+footer{margin-top:30px;font-size:12px;color:var(--mute)}
+.reset{font:inherit;font-size:13px;color:var(--brand);background:none;border:0;cursor:pointer;text-decoration:underline}
+@media(max-width:700px){.panel{position:static}.stats{grid-template-columns:repeat(2,1fr)}.seg small{width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <div class="org">인제교육지원청 · 참가자 확인용</div>
+ <h1>2026 인제 사제동행 배드민턴대회</h1>
+ <div class="meta">참가자 명단 · 총 <span id="total"></span>팀 (복식) · 학교 · 종목 · 그룹 · 구분(학생/학부모/교사)별 확인</div>
+</header>
+<div class="stats" id="stats"></div>
+
+<div class="panel">
+ <div class="row">
+  <input id="q" type="search" placeholder="이름 검색 (예: 김종호)" autocomplete="off" aria-label="이름 검색">
+  <select id="school" aria-label="학교 선택"></select>
+ </div>
+ <div class="seg" data-k="lv"><small>학교급</small></div>
+ <div class="seg" data-k="e"><small>종목</small></div>
+ <div class="seg" data-k="g"><small>그룹</small></div>
+ <div class="seg" data-k="role"><small>구분</small></div>
+ <div style="margin-top:8px"><button class="reset" id="reset">필터 초기화</button></div>
+</div>
+
+<div class="tabs" role="tablist">
+ <button role="tab" aria-selected="true" data-v="school">학교별</button>
+ <button role="tab" aria-selected="false" data-v="div">종목·그룹별</button>
+ <button role="tab" aria-selected="false" data-v="num">번호순</button>
+</div>
+<div class="legend">구분 표시:
+ <span class="role r-stu">학생</span><span class="role r-par">학부모</span><span class="role r-tea">교사·교직원</span><span class="role r-adm">교장·교감</span><span class="role r-off">교육지원청</span>
+ <span>· 노란 배경 = 검색한 사람</span>
+</div>
+<div class="count" id="count"></div>
+<div id="out"></div>
+<footer>자료: 2026 인제 사제동행배드민턴대회 참가자 명단(11.23. 기준). 그룹 숫자는 출전급수이며, 같은 종목·학교급 안에서 같은 그룹끼리 경기합니다. 명단은 변경될 수 있으니 최종 대진표를 확인하세요.</footer>
+</div>
+<script>
+const TEAMS=[{"n":1,"e":"F","l":"초등","g":1,"p":[{"s":"인제남초등학교","m":"송정은","r":"스포츠강사"},{"s":"인제남초등학교","m":"김담원","r":"학생"}]},{"n":2,"e":"F","l":"초등","g":2,"p":[{"s":"인제초등학교","m":"변선우","r":"교사"},{"s":"인제초등학교","m":"윤설아","r":"학생"}]},{"n":3,"e":"F","l":"초등","g":2,"p":[{"s":"인제초등학교","m":"박소연","r":"교사"},{"s":"인제초등학교","m":"김아랑","r":"학생"}]},{"n":4,"e":"F","l":"초등","g":2,"p":[{"s":"인제초등학교","m":"이정윤","r":"교사"},{"s":"인제초등학교","m":"심소율","r":"학생"}]},{"n":5,"e":"F","l":"초등","g":2,"p":[{"s":"인제초등학교","m":"김영이","r":"교사"},{"s":"인제초등학교","m":"박수아","r":"학생"}]},{"n":6,"e":"F","l":"초등","g":2,"p":[{"s":"인제초등학교","m":"이다영","r":"교사"},{"s":"인제초등학교","m":"장서윤","r":"학생"}]},{"n":7,"e":"F","l":"초등","g":2,"p":[{"s":"용대초등학교","m":"김의재","r":"학부모"},{"s":"용대초등학교","m":"심민솔","r":"학생"}]},{"n":8,"e":"F","l":"초등","g":2,"p":[{"s":"용대초등학교","m":"신경미","r":"학부모"},{"s":"용대초등학교","m":"이은서","r":"학생"}]},{"n":9,"e":"F","l":"초등","g":2,"p":[{"s":"용대초등학교","m":"이혜경","r":"학부모"},{"s":"용대초등학교","m":"박지우","r":"학생"}]},{"n":10,"e":"M","l":"초등","g":3,"p":[{"s":"인제초등학교","m":"김종안","r":"교사"},{"s":"인제초등학교","m":"김영민","r":"학생"}]},{"n":11,"e":"M","l":"초등","g":3,"p":[{"s":"인제남초등학교","m":"김종호","r":"교감"},{"s":"인제남초등학교","m":"김병훈","r":"학생"}]},{"n":12,"e":"M","l":"초등","g":3,"p":[{"s":"월학초등학교","m":"진태선","r":"교사"},{"s":"월학초등학교","m":"허남현","r":"학생"}]},{"n":13,"e":"M","l":"초등","g":4,"p":[{"s":"용대초등학교","m":"김효종","r":"학부모"},{"s":"용대초등학교","m":"김태현","r":"학생"}]},{"n":14,"e":"M","l":"초등","g":4,"p":[{"s":"용대초등학교","m":"홍성복","r":"교사"},{"s":"용대초등학교","m":"이승주","r":"학생"}]},{"n":15,"e":"M","l":"초등","g":4,"p":[{"s":"용대초등학교","m":"권덕순","r":"학부모"},{"s":"용대초등학교","m":"권용현","r":"학생"}]},{"n":16,"e":"M","l":"초등","g":4,"p":[{"s":"용대초등학교","m":"전상훈","r":"학부모"},{"s":"용대초등학교","m":"전윤후","r":"학생"}]},{"n":17,"e":"M","l":"초등","g":4,"p":[{"s":"인제초등학교","m":"이승현","r":"교사"},{"s":"인제초등학교","m":"박재이","r":"학생"}]},{"n":18,"e":"M","l":"초등","g":4,"p":[{"s":"인제초등학교","m":"정병인","r":"교사"},{"s":"인제초등학교","m":"이주상","r":"학생"}]},{"n":19,"e":"M","l":"초등","g":4,"p":[{"s":"인제초등학교","m":"심규순","r":"학부모"},{"s":"인제초등학교","m":"심원용","r":"학생"}]},{"n":20,"e":"M","l":"초등","g":4,"p":[{"s":"인제초등학교","m":"서진우","r":"학부모"},{"s":"인제초등학교","m":"서은우","r":"학생"}]},{"n":21,"e":"M","l":"초등","g":4,"p":[{"s":"인제초등학교","m":"김영록","r":"교사"},{"s":"인제초등학교","m":"최시우","r":"학생"}]},{"n":22,"e":"M","l":"초등","g":4,"p":[{"s":"교육지원청","m":"박진태","r":"교육지원청"},{"s":"인제초등학교","m":"이태석","r":"학생"}]},{"n":23,"e":"M","l":"초등","g":4,"p":[{"s":"교육지원청","m":"최기환","r":"교육지원청"},{"s":"인제초등학교","m":"박상욱","r":"학생"}]},{"n":24,"e":"M","l":"초등","g":4,"p":[{"s":"교육지원청","m":"김남규","r":"교육지원청"},{"s":"서화초등학교","m":"황서준","r":"학생"}]},{"n":25,"e":"M","l":"초등","g":4,"p":[{"s":"인제남초등학교","m":"유기원","r":"학부모"},{"s":"인제남초등학교","m":"유시우","r":"학생"}]},{"n":26,"e":"M","l":"초등","g":4,"p":[{"s":"인제남초등학교","m":"박기범","r":"학부모"},{"s":"인제남초등학교","m":"박유빈","r":"학생"}]},{"n":27,"e":"M","l":"초등","g":4,"p":[{"s":"인제남초등학교","m":"김장웅","r":"학부모"},{"s":"인제남초등학교","m":"김태윤","r":"학생"}]},{"n":28,"e":"M","l":"초등","g":4,"p":[{"s":"한계초등학교","m":"이상석","r":"부"},{"s":"한계초등학교","m":"이지한","r":"학생"}]},{"n":29,"e":"X","l":"초등","g":6,"p":[{"s":"용대초등학교","m":"안용희","r":"학부모"},{"s":"용대초등학교","m":"김하진","r":"학생"}]},{"n":30,"e":"X","l":"초등","g":6,"p":[{"s":"용대초등학교","m":"박주연","r":"학부모"},{"s":"용대초등학교","m":"이태윤","r":"학생"}]},{"n":31,"e":"X","l":"초등","g":6,"p":[{"s":"용대초등학교","m":"송은희","r":"교사"},{"s":"용대초등학교","m":"최진우","r":"학생"}]},{"n":32,"e":"X","l":"초등","g":6,"p":[{"s":"용대초등학교","m":"이명희","r":"교직원"},{"s":"용대초등학교","m":"이노하","r":"학생"}]},{"n":33,"e":"X","l":"초등","g":6,"p":[{"s":"용대초등학교","m":"김예림","r":"교사"},{"s":"용대초등학교","m":"백이안","r":"학생"}]},{"n":34,"e":"X","l":"초등","g":6,"p":[{"s":"인제초등학교","m":"장동희","r":"학부모"},{"s":"인제초등학교","m":"장도윤","r":"학생"}]},{"n":35,"e":"X","l":"초등","g":6,"p":[{"s":"인제초등학교","m":"고은수","r":"교사"},{"s":"인제초등학교","m":"최준우","r":"학생"}]},{"n":36,"e":"X","l":"초등","g":6,"p":[{"s":"인제초등학교","m":"심경화","r":"학부모"},{"s":"인제초등학교","m":"이학준","r":"학생"}]},{"n":37,"e":"X","l":"초등","g":6,"p":[{"s":"인제초등학교","m":"장희은","r":"교사"},{"s":"인제초등학교","m":"김다담","r":"학생"}]},{"n":38,"e":"X","l":"초등","g":6,"p":[{"s":"인제초등학교","m":"김성은","r":"교사"},{"s":"인제초등학교","m":"이민수","r":"학생"}]},{"n":39,"e":"X","l":"초등","g":6,"p":[{"s":"인제초등학교","m":"엄혜영","r":"교사"},{"s":"인제초등학교","m":"조세빈","r":"학생"}]},{"n":40,"e":"X","l":"초등","g":6,"p":[{"s":"교육지원청","m":"김연희","r":"교육지원청"},{"s":"인제초등학교","m":"정아인","r":"학생"}]},{"n":41,"e":"X","l":"초등","g":6,"p":[{"s":"월학초등학교","m":"최준호","r":"교사"},{"s":"월학초등학교","m":"백시온","r":"학생"}]},{"n":42,"e":"X","l":"초등","g":6,"p":[{"s":"월학초등학교","m":"심명섭","r":"교장"},{"s":"월학초등학교","m":"현경희","r":"학생"}]},{"n":43,"e":"F","l":"중등","g":1,"p":[{"s":"원통중학교","m":"김누리","r":"교사"},{"s":"원통중학교","m":"김선아","r":"학생"}]},{"n":44,"e":"F","l":"중등","g":1,"p":[{"s":"서화중학교","m":"김슬예","r":"교사"},{"s":"서화중학교","m":"이다경","r":"학생"}]},{"n":45,"e":"F","l":"중등","g":1,"p":[{"s":"서화중학교","m":"백미경","r":"교사"},{"s":"서화중학교","m":"김애란","r":"학생"}]},{"n":46,"e":"F","l":"중등","g":2,"p":[{"s":"인제중학교","m":"이소람","r":"교사"},{"s":"인제중학교","m":"심서현","r":"학생"}]},{"n":47,"e":"F","l":"중등","g":2,"p":[{"s":"원통중학교","m":"김도현","r":"교사"},{"s":"원통중학교","m":"정윤솔","r":"학생"}]},{"n":48,"e":"F","l":"중등","g":2,"p":[{"s":"원통중학교","m":"이수현","r":"교사"},{"s":"원통중학교","m":"반수진","r":"학생"}]},{"n":49,"e":"M","l":"중등","g":3,"p":[{"s":"신남중학교","m":"김상규","r":"교사"},{"s":"신남중학교","m":"이지오","r":"학생"}]},{"n":50,"e":"M","l":"중등","g":4,"p":[{"s":"원통중학교","m":"이철기","r":"교감"},{"s":"원통중학교","m":"최유민","r":"학생"}]},{"n":51,"e":"M","l":"중등","g":4,"p":[{"s":"교육지원청","m":"전병훈","r":"교육지원청"},{"s":"서화중학교","m":"박지후","r":"학생"}]},{"n":52,"e":"M","l":"중등","g":4,"p":[{"s":"원통중학교","m":"이병주","r":"교사"},{"s":"원통중학교","m":"박민중","r":"학생"}]},{"n":53,"e":"X","l":"중등","g":5,"p":[{"s":"신남중학교","m":"박형철","r":"학부모"},{"s":"신남중학교","m":"박가애","r":"학생"}]},{"n":54,"e":"X","l":"중등","g":5,"p":[{"s":"신남중학교","m":"김영실","r":"교사"},{"s":"신남중학교","m":"박지애","r":"학생"}]},{"n":55,"e":"X","l":"중등","g":5,"p":[{"s":"원통중학교","m":"김신애","r":"교사"},{"s":"원통중학교","m":"조민혁","r":"학생"}]},{"n":56,"e":"X","l":"중등","g":5,"p":[{"s":"교육지원청","m":"황선영","r":"교육지원청"},{"s":"서화중학교","m":"이시우","r":"학생"}]},{"n":57,"e":"X","l":"중등","g":5,"p":[{"s":"교육지원청","m":"김혜인","r":"교육지원청"},{"s":"서화중학교","m":"정지화","r":"학생"}]},{"n":58,"e":"X","l":"중등","g":5,"p":[{"s":"서화중학교","m":"김미정","r":"교무행정사"},{"s":"서화중학교","m":"김대건","r":"학생"}]},{"n":59,"e":"X","l":"중등","g":6,"p":[{"s":"인제중학교","m":"김보민","r":"교사"},{"s":"인제중학교","m":"김은주","r":"학생"}]},{"n":60,"e":"X","l":"중등","g":6,"p":[{"s":"인제중학교","m":"이지섭","r":"학생"},{"s":"인제중학교","m":"박현주","r":"학부모"}]},{"n":61,"e":"X","l":"중등","g":6,"p":[{"s":"교육지원청","m":"김주헌","r":"교육지원청"},{"s":"서화중학교","m":"김민정","r":"학생"}]},{"n":62,"e":"X","l":"중등","g":6,"p":[{"s":"원통중학교","m":"오명종","r":"교사"},{"s":"원통중학교","m":"조하윤","r":"학생"}]},{"n":63,"e":"F","l":"고등","g":2,"p":[{"s":"원통고등학교","m":"김현진","r":"교감"},{"s":"원통고등학교","m":"송채은","r":"학생"}]},{"n":64,"e":"F","l":"고등","g":2,"p":[{"s":"원통고등학교","m":"박재연","r":"교사"},{"s":"원통고등학교","m":"박진서","r":"학생"}]},{"n":65,"e":"F","l":"고등","g":2,"p":[{"s":"인제고등학교","m":"한옥란","r":"교장"},{"s":"인제고등학교","m":"한혜원","r":"학생"}]},{"n":66,"e":"F","l":"고등","g":2,"p":[{"s":"인제고등학교","m":"심혜은","r":"전문상담사"},{"s":"인제고등학교","m":"한하랑","r":"학생"}]},{"n":67,"e":"M","l":"고등","g":3,"p":[{"s":"기린고등학교","m":"양지석","r":"교사"},{"s":"기린고등학교","m":"박은","r":"학생"}]},{"n":68,"e":"M","l":"고등","g":3,"p":[{"s":"원통고등학교","m":"김한별","r":"교사"},{"s":"원통고등학교","m":"홍현준","r":"학생"}]},{"n":69,"e":"M","l":"고등","g":3,"p":[{"s":"원통고등학교","m":"김재천","r":"교사"},{"s":"원통고등학교","m":"이한희","r":"학생"}]},{"n":70,"e":"M","l":"고등","g":3,"p":[{"s":"원통고등학교","m":"김희수","r":"학부모"},{"s":"원통고등학교","m":"김이재","r":"학생"}]},{"n":71,"e":"M","l":"고등","g":3,"p":[{"s":"인제고등학교","m":"장원석","r":"교사"},{"s":"인제고등학교","m":"백승원","r":"학생"}]},{"n":72,"e":"M","l":"고등","g":3,"p":[{"s":"교육지원청","m":"원구은","r":"교육지원청"},{"s":"기린고등학교","m":"안유성","r":"학생"}]},{"n":73,"e":"M","l":"고등","g":4,"p":[{"s":"기린고등학교","m":"김범수","r":"교사"},{"s":"기린고등학교","m":"안혜성","r":"학생"}]},{"n":74,"e":"M","l":"고등","g":4,"p":[{"s":"원통고등학교","m":"신승호","r":"교장"},{"s":"원통고등학교","m":"허예준","r":"학생"}]},{"n":75,"e":"M","l":"고등","g":4,"p":[{"s":"원통고등학교","m":"김동은","r":"교사"},{"s":"원통고등학교","m":"조경훈","r":"학생"}]},{"n":76,"e":"X","l":"고등","g":5,"p":[{"s":"원통고등학교","m":"유용진","r":"학부모"},{"s":"원통고등학교","m":"유수진","r":"학생"}]},{"n":77,"e":"X","l":"고등","g":5,"p":[{"s":"원통고등학교","m":"권희송","r":"교사"},{"s":"원통고등학교","m":"장영재","r":"학생"}]},{"n":78,"e":"X","l":"고등","g":6,"p":[{"s":"기린고등학교","m":"김동건","r":"교사"},{"s":"기린고등학교","m":"변진서","r":"학생"}]},{"n":79,"e":"X","l":"고등","g":6,"p":[{"s":"기린고등학교","m":"선주용","r":"교사"},{"s":"기린고등학교","m":"박하영","r":"학생"}]},{"n":80,"e":"X","l":"고등","g":6,"p":[{"s":"원통고등학교","m":"김남희","r":"교사"},{"s":"원통고등학교","m":"심호현","r":"학생"}]},{"n":81,"e":"X","l":"고등","g":6,"p":[{"s":"원통고등학교","m":"조윤식","r":"교사"},{"s":"원통고등학교","m":"고나린","r":"학생"}]},{"n":82,"e":"X","l":"고등","g":6,"p":[{"s":"인제고등학교","m":"배지원","r":"교사"},{"s":"인제고등학교","m":"전제하","r":"학생"}]},{"n":83,"e":"X","l":"고등","g":6,"p":[{"s":"인제고등학교","m":"김현국","r":"교사"},{"s":"인제고등학교","m":"김도연","r":"학생"}]}];
+const EN={M:'남복',F:'여복',X:'혼복'}, EF={M:'남자복식',F:'여자복식',X:'혼합복식'};
+const LVS=['초등','중등','고등'];
+const roleCls=r=>r==='학생'?'stu':r==='학부모'||r==='부'?'par':r==='교육지원청'?'off':(r==='교장'||r==='교감')?'adm':'tea';
+const roleTxt=r=>r==='부'?'학부모':r;
+const roleKey=r=>({stu:'학생',par:'학부모',tea:'교사·교직원',adm:'교장·교감',off:'교육지원청'})[roleCls(r)];
+const state={q:'',school:'',lv:'',e:'',g:'',role:'',view:'school'};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const schools=[...new Set(TEAMS.flatMap(t=>t.p.map(x=>x.s)))].sort((a,b)=>{
+ const o=s=>s==='교육지원청'?99:LVS.indexOf(s.includes('초등')?'초등':s.includes('중')?'중등':'고등');
+ return o(a)-o(b)||a.localeCompare(b,'ko')});
+// team's home school = school of the student
+TEAMS.forEach(t=>{const st=t.p.find(x=>x.r==='학생'||x.r==='학부모'&&false)||t.p[1];t.home=st.s;t.sch=[...new Set(t.p.map(x=>x.s))]});
+function segs(){
+ const defs={lv:['초등','중등','고등'],e:['M','F','X'],g:[1,2,3,4,5,6],role:['학생','학부모','교사·교직원','교장·교감','교육지원청']};
+ document.querySelectorAll('.seg').forEach(el=>{const k=el.dataset.k;
+  const mk=(v,l)=>{const b=document.createElement('button');b.textContent=l;b.dataset.v=v;b.setAttribute('aria-pressed','false');b.onclick=()=>{state[k]=state[k]==v?'':v;render()};el.appendChild(b)};
+  mk('','전체');defs[k].forEach(v=>mk(v,k==='e'?EF[v]:k==='g'?v+'그룹':v))});
+ const s=$('#school');s.innerHTML='<option value="">전체 학교·기관</option>'+schools.map(x=>`<option>${x}</option>`).join('');
+ s.onchange=()=>{state.school=s.value;render()};
+}
+function match(t){
+ const q=state.q.trim();
+ if(q&&!t.p.some(x=>x.m.includes(q)))return false;
+ if(state.school&&!t.sch.includes(state.school))return false;
+ if(state.lv&&t.l!==state.lv)return false;
+ if(state.e&&t.e!==state.e)return false;
+ if(state.g&&t.g!=state.g)return false;
+ if(state.role&&!t.p.some(x=>roleKey(x.r)===state.role))return false;
+ return true;
+}
+function card(t){
+ const q=state.q.trim();
+ return `<div class="team ${t.e}"><div class="th"><span class="no">No.${t.n}</span><span class="tag ${t.e}">${EF[t.e]}</span><span class="tag lv">${t.l} ${t.g}그룹</span></div>`+
+ t.p.map(x=>`<div class="p ${q&&x.m.includes(q)?'hit':''}"><div><div class="nm">${esc(x.m)}</div><div class="sc">${esc(x.s)}</div></div><span class="role r-${roleCls(x.r)}">${esc(roleTxt(x.r))}</span></div>`).join('')+`</div>`;
+}
+const cmpT=(a,b)=>LVS.indexOf(a.l)-LVS.indexOf(b.l)||'MFX'.indexOf(a.e)-'MFX'.indexOf(b.e)||a.g-b.g||a.n-b.n;
+function render(){
+ document.querySelectorAll('.seg').forEach(el=>el.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(state[el.dataset.k]==b.dataset.v))));
+ document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.v===state.view)));
+ const list=TEAMS.filter(match);
+ $('#count').textContent=`검색 결과 ${list.length}팀`+(list.length?` · 참가자 ${list.length*2}명`:'');
+ let h='';
+ if(!list.length)h='<div class="empty">조건에 맞는 팀이 없습니다.</div>';
+ else if(state.view==='school'){
+  const by={};list.forEach(t=>t.sch.forEach(s=>(by[s]=by[s]||[]).push(t)));
+  const keys=schools.filter(s=>by[s]);
+  h=keys.map(s=>{const ts=by[s].sort(cmpT);const ppl=ts.flatMap(t=>t.p).filter(x=>x.s===s);
+   const cnt={};ppl.forEach(x=>{const k=roleKey(x.r);cnt[k]=(cnt[k]||0)+1});
+   const sub=Object.entries(cnt).map(([k,v])=>`${k} ${v}`).join(' · ');
+   return `<details class="school" ${(state.school||state.q||keys.length<=3)?'open':''}><summary>${esc(s)} <span class="tag lv">${ts.length}팀</span><span class="sub">${sub}</span></summary><div class="grid">${ts.map(card).join('')}</div></details>`}).join('');
+ }else if(state.view==='div'){
+  const by={};list.sort(cmpT).forEach(t=>{const k=`${t.l}|${t.e}|${t.g}`;(by[k]=by[k]||[]).push(t)});
+  h=Object.entries(by).map(([k,ts])=>{const[l,e,g]=k.split('|');return `<h3 class="grp"><span class="tag ${e}">${l} ${EF[e]}</span> ${g}그룹 <i>${ts.length}팀</i></h3><div class="grid">${ts.map(card).join('')}</div>`}).join('');
+ }else h=`<div class="grid">${list.sort((a,b)=>a.n-b.n).map(card).join('')}</div>`;
+ $('#out').innerHTML=h;
+}
+function init(){
+ $('#total').textContent=TEAMS.length;
+ const c=(f)=>TEAMS.filter(f).length;
+ const stu=TEAMS.flatMap(t=>t.p).filter(x=>x.r==='학생').length;
+ const par=TEAMS.flatMap(t=>t.p).filter(x=>roleCls(x.r)==='par').length;
+ $('#stats').innerHTML=[[TEAMS.length,'전체 팀'],[stu,'학생'],[par,'학부모'],[LVS.map(l=>c(t=>t.l===l)).join(' / '),'초 / 중 / 고 팀']].map(([a,b])=>`<div class="stat"><b>${a}</b><span>${b}</span></div>`).join('');
+ segs();
+ $('#q').oninput=e=>{state.q=e.target.value;render()};
+ $('#reset').onclick=()=>{Object.assign(state,{q:'',school:'',lv:'',e:'',g:'',role:''});$('#q').value='';$('#school').value='';render()};
+ document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{state.view=b.dataset.v;render()});
+ render();
+}
+init();
+</script>
+</body>
+</html>
